@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>月小水长的个人博客</title>
+  <title>刺客小柯的个人博客</title>
   
   <subtitle>以悲观透彻的态度，乐观积极地去生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://inspurer.github.io/"/>
+  <link href="https://ckxk.github.io/"/>
   <updated>2018-09-25T13:45:24.179Z</updated>
-  <id>https://inspurer.github.io/</id>
+  <id>https://ckxk.github.io/</id>
   
   <author>
-    <name>月小水长</name>
+    <name>刺客小柯</name>
     
   </author>
   
@@ -18,12 +18,12 @@
   
   <entry>
     <title>基于opencv人脸识别的员工考勤系统</title>
-    <link href="https://inspurer.github.io/2018/09/25/%E5%9F%BA%E4%BA%8Eopencv%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%9A%84%E5%91%98%E5%B7%A5%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/"/>
-    <id>https://inspurer.github.io/2018/09/25/基于opencv人脸识别的员工考勤系统/</id>
+    <link href="https://ckxk.github.io/2018/09/25/%E5%9F%BA%E4%BA%8Eopencv%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E7%9A%84%E5%91%98%E5%B7%A5%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/"/>
+    <id>https://ckxk.github.io/2018/09/25/基于opencv人脸识别的员工考勤系统/</id>
     <published>2018-09-25T13:37:57.000Z</published>
     <updated>2018-09-25T13:45:24.179Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="WorkAttendanceSystem"><a href="#WorkAttendanceSystem" class="headerlink" title="WorkAttendanceSystem"></a>WorkAttendanceSystem</h1><p>一个基于opencv人脸识别的员工考勤系统    </p><p>##工程简介<br>写于2018/09/，python课设期间；</p><p>##项目结构<br>mainui.py是主界面，调用face_img_register.py和face_recognize_punchcard.py<br>其中face_img_register.py是录入人脸信息，face_recognize_punchcard.py是刷脸考勤<br>face_feature_storage.py属于鸡肋文件，没什么用，舍不得删，毕竟有点参考价值。<br>face_recognize_punchcard_lib.py和face_recognize_punchcard.py本质上差不多，<br>但是前者是给face_img_register.py专有的依赖。防止录入两个同样的人脸建不同数据库的风险。   </p><p>##更新<br>mainui.py–&gt;myapp.py<br>face_recognize_punchcard_lib.py等鸡肋文件放到useless文件夹里<br>运行效率显著提高<br>2018/9/23记    </p><p>解决同步性问题，新录入的人脸能立即被识别<br>代码的运行速度少许下降<br>2018/9/25记</p><p>##运行效果<br>1.主界面<br><img src="https://i.imgur.com/fNw0Mgj.png" alt=""></p><p>2.人脸录入<br><img src="https://i.imgur.com/Gg3hmBs.png" alt="">    </p><p>3.刷脸考勤<br><img src="https://i.imgur.com/ymz7nYV.png" alt=""></p><p>其余的就不多做展示了，有什么问题欢迎<a href="mailto:2391527690@qq.com" target="_blank" rel="noopener">2391527690@qq.com</a>联系<br>最新的代码请到github:<a href="https://github.com/inspurer/WorkAttendanceSystem" target="_blank" rel="noopener">链接</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="WorkAttendanceSystem"><a href="#WorkAttendanceSystem" class="headerlink" title="WorkAttendanceSystem"></a>WorkAttendanceSystem</h1><p>一个基于opencv人脸识别的员工考勤系统    </p><p>##工程简介<br>写于2018/09/，python课设期间；</p><p>##项目结构<br>mainui.py是主界面，调用face_img_register.py和face_recognize_punchcard.py<br>其中face_img_register.py是录入人脸信息，face_recognize_punchcard.py是刷脸考勤<br>face_feature_storage.py属于鸡肋文件，没什么用，舍不得删，毕竟有点参考价值。<br>face_recognize_punchcard_lib.py和face_recognize_punchcard.py本质上差不多，<br>但是前者是给face_img_register.py专有的依赖。防止录入两个同样的人脸建不同数据库的风险。   </p><p>##更新<br>mainui.py–&gt;myapp.py<br>face_recognize_punchcard_lib.py等鸡肋文件放到useless文件夹里<br>运行效率显著提高<br>2018/9/23记    </p><p>解决同步性问题，新录入的人脸能立即被识别<br>代码的运行速度少许下降<br>2018/9/25记</p><p>##运行效果<br>1.主界面<br><img src="https://i.imgur.com/fNw0Mgj.png" alt=""></p><p>2.人脸录入<br><img src="https://i.imgur.com/Gg3hmBs.png" alt="">    </p><p>3.刷脸考勤<br><img src="https://i.imgur.com/ymz7nYV.png" alt=""></p><p>其余的就不多做展示了，有什么问题欢迎<a href="mailto:2391527690@qq.com" target="_blank" rel="noopener">2391527690@qq.com</a>联系<br>最新的代码请到github:<a href="https://github.com/ckxk/WorkAttendanceSystem" target="_blank" rel="noopener">链接</a></p>]]></content>
     
     <summary type="html">
     
@@ -34,21 +34,21 @@
     
     </summary>
     
-      <category term="python学习" scheme="https://inspurer.github.io/categories/python%E5%AD%A6%E4%B9%A0/"/>
+      <category term="python学习" scheme="https://ckxk.github.io/categories/python%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="人脸识别" scheme="https://inspurer.github.io/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
+      <category term="人脸识别" scheme="https://ckxk.github.io/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
     
   </entry>
   
   <entry>
     <title>数据结构之单链表</title>
-    <link href="https://inspurer.github.io/2018/09/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
-    <id>https://inspurer.github.io/2018/09/12/数据结构之单链表/</id>
+    <link href="https://ckxk.github.io/2018/09/12/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B9%8B%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    <id>https://ckxk.github.io/2018/09/12/数据结构之单链表/</id>
     <published>2018-09-12T06:34:18.000Z</published>
     <updated>2018-09-12T08:56:03.471Z</updated>
     
-    <content type="html"><![CDATA[<p>从今天起开始数据结构系列的分享，今天分享的是单链表。单链表大概是大概是每个数据结构<br>初学者的必经之路，下面结合一个小小的工程深入学习单链表的使用–简易客户管理系统。<br>ps：如果还不清楚单链表是什么的小伙伴自行百度，在此不在赘述   </p><hr><p>#项目结构<br>如图所示<br><img src="https://i.imgur.com/ndpa8Mo.png" alt=""><br>大致了解了项目架构后，下面开始从零编写代码<br><strong>注：增、删、改这三个部分同时包含了将变动后的信息写入到文件中的操作</strong>    </p><hr><p>#代码编写</p><p>##项目基础代码<br>俗话说得好，“万丈高楼平地起”，先来编写项目的预定义代码部分，主要是头文件<br>包含、结构体定义、全局变量定义等    </p><p>###头文件包含<br><code>#include&lt;stdio.h&gt;    //C程序基础库</code><br><code>#include&lt;stdlib.h&gt;    //包含函数exit()</code><br><code>#include&lt;string.h&gt; //包含函数strcmp()</code>  </p><p>###结构体定义   </p><p><pre name="code" class="c++"><br>typedef struct item{<br>    char name[20];    //保存客户姓名<br>    char gender[20];  //保存客户性别<br>    int  age;         //保存客户年龄<br>    char tel[20];     //保存客户号码<br>} guest;<br></pre><br>结构体定义不要多说了哈，这里<code>typedef...guest</code>是给<strong>结构体item起别名</strong>的意思，也就是<br><code>struct item</code>在这个源文件里面等价于<code>guest</code>   </p><p><pre name="code" class="c++"><br>typedef struct node {<br>    guest data;         //数据域<br>    struct node <em> next; //指针域<br>}</em> link;<br></pre><br>这里是给<strong>指向结构体node的指针起别名</strong></p><p>###全局变量定义<br><code>link T;//头指针</code><br>这个头指针T是整个系统的索引，六个模块共有一个，虽然有尽量少定义全局变量的原则，但这里<br>的全局变量T可以避免各个函数间复杂的参数传递问题，牺牲了空间，换取了运行时间的减少；<br>同时要注意我在后面对T的初始化代码   </p><p><pre name="code" class="c++"><br>//初始化头指针<br>T=(link)malloc(sizeof(struct node));<br>T-&gt;next = NULL;<br></pre><br>这里并没有给T安排数据域，T不是第一个存储客户信息的节点指针，T-&gt;next才是，初始化头指针<br>时还没有存储客户信息的结点加入，所以<code>T-&gt;next=NULL;</code>,这是一个编程者应该养成的好习惯；为<br>什么不给T安排数据域呢，这里主要考虑到后面的删除模块的编写，我们知道，删除一个结点，要先<br>找到这个结点的前驱指针p和后驱指针q，然后<code>p-&gt;next = q-&gt;next；</code>,如果给T安排数据域的话，<br>T的前驱是什么呢？就算不用上面我说的那套删除逻辑，用<code>if...else...</code>语句和另外一套逻辑<br>完成对T的删除，代码明显复杂些。 </p><p>##项目核心代码   </p><p>###一、加载文件<br>代码如下   </p><p><pre name="code" class="c++"><br>void init() {<br>    link p,s;<br>    FILE *fp;<br>    int i  = 0;<br>    s = p=(link)malloc(sizeof(struct node));<br>    p-&gt;next = NULL;<br>    if((fp=fopen(“1.txt”,”r”))==NULL) {<br>        printf(“load error!”);<br>        exit(1);<br>    }<br>    while(!feof(fp)) {<br>        fscanf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,&amp;p-&gt;data.age,p-&gt;data.tel);<br>        i++;<br>        if(i!=1) {<br>            s-&gt;next = p;<br>            s=p;<br>        }<br>        else{<br>            T-&gt;next = p;<br>        }<br>        p=(link)malloc(sizeof(struct node));<br>        p-&gt;next = NULL;<br>    }<br>    printf(“总人数i=====%d\n”,i);<br>    if(fclose(fp)) {<br>        printf(“Can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>介绍下代码逻辑，新开辟内存空间，并使s、p指向它，打开文件，如果文件指针没有到文件尾，将<br>从文件读取到的一个客户信息赋给p的数据域，如果是读取第一个客户信息，将p指向的结点连在头<br>指针T后面，否则，将p连在s后面，因为这个时候s是p的前驱指针，连接成功后将p赋值给s，p又<br>指向一个新开辟的结点…<br>图示：<br><img src="https://i.imgur.com/hSpoXhg.png" alt="">     </p><p>###二、增加客户<br>代码如下：</p><p><pre name="code" class="c++"><br>//添加<br>void create() {<br>    link p,s;<br>    FILE *fp;<br>    int yn;<br>    s=T;<br>    while(s-&gt;next!=NULL) {<br>        s=s-&gt;next;<br>    }<br>    do {<br>        p=(link)malloc(sizeof(struct node));<br>        printf(“请输入客户姓名：\n”);<br>        scanf(“%s”,p-&gt;data.name);<br>        printf(“请输入客户性别：\n”);<br>        scanf(“%s”,p-&gt;data.gender);<br>        printf(“请输入客户年龄：\n”);<br>        scanf(“%d”,&amp;p-&gt;data.age);<br>        printf(“请输入客户联系方式：\n”);<br>        scanf(“%s”,p-&gt;data.tel);<br>        p-&gt;next=NULL;<br>        s-&gt;next=p;<br>        s=p;<br>        if((fp=fopen(“1.txt”,”at”))==NULL) {<br>            printf(“write error!\n”);<br>            exit(0);<br>        }<br>        printf(“写了一次\n”);<br>        fprintf(fp,”%s\t%s\t%d\t%s\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        if(fclose(fp)) {<br>            printf(“can’t close the file!\n”);<br>            exit(0);<br>        }<br>        printf(“添加成功!\n”);<br>        printf(“是否继续添加请输入0或1:”);<br>        scanf(“%d”,&amp;yn);<br>    } while(yn);<br>}<br></pre><br>代码逻辑很简单，新增结点，并连在尾节点后面，同时写入文件，如果前一片代码看懂了，这不是什么<br>大问题…     </p><p>###三、删除客户<br>代码如下</p><p><pre name="code" class="c++"><br>//删除<br>int del() {<br>    link p,q;<br>    FILE *fp;<br>    char mod[25];<br>    printf(“请输入需要删除的客户名称:\n”);<br>    scanf(“%s”,mod);<br>    p=T;<br>    while(p-&gt;next!=NULL&amp;&amp;strcmp(p-&gt;next-&gt;data.name,mod)!=0)<br>        p=p-&gt;next;<br>    if(p-&gt;next==NULL) {<br>        printf(“并无此人！\n”);<br>        return 0;<br>    }<br>    q = p;<br>    p = p-&gt;next;<br>    q-&gt;next = p-&gt;next;<br>    delete(p);<br>    printf(“删除成功！\n”);<br>    if((fp=fopen(“1.txt”,”wt”))==NULL) {<br>        printf(“error!\n”);<br>        exit(0);<br>    }<br>    p=T-&gt;next;<br>    while(p!=NULL) {<br>        printf(“%s”,p-&gt;data.name);<br>        fprintf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        p = p-&gt;next;<br>    }<br>    if(fclose(fp)) {<br>        printf(“can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>模块三、四、五、六道理类似，不再赘述<br>附上代码地址：<br><a href="https://github.com/inspurer/DataStructure/tree/master/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/day01%E5%8D%95%E9%93%BE%E8%A1%A8" target="_blank" rel="noopener">github</a> 欢迎star<br>如有疑问，欢迎进群讨论：<br><img src="https://shang.qq.com/wpa/qunwpaidkey=206e0bc6e1608678ffccd929ba75b1a459994d2b638d3253df444ffcfd4964d9" alt="加群链接"><br>如链接失效，扫二维码：<br><img src="https://i.imgur.com/fEXzOCG.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>从今天起开始数据结构系列的分享，今天分享的是单链表。单链表大概是大概是每个数据结构<br>初学者的必经之路，下面结合一个小小的工程深入学习单链表的使用–简易客户管理系统。<br>ps：如果还不清楚单链表是什么的小伙伴自行百度，在此不在赘述   </p><hr><p>#项目结构<br>如图所示<br><img src="https://i.imgur.com/ndpa8Mo.png" alt=""><br>大致了解了项目架构后，下面开始从零编写代码<br><strong>注：增、删、改这三个部分同时包含了将变动后的信息写入到文件中的操作</strong>    </p><hr><p>#代码编写</p><p>##项目基础代码<br>俗话说得好，“万丈高楼平地起”，先来编写项目的预定义代码部分，主要是头文件<br>包含、结构体定义、全局变量定义等    </p><p>###头文件包含<br><code>#include&lt;stdio.h&gt;    //C程序基础库</code><br><code>#include&lt;stdlib.h&gt;    //包含函数exit()</code><br><code>#include&lt;string.h&gt; //包含函数strcmp()</code>  </p><p>###结构体定义   </p><p><pre name="code" class="c++"><br>typedef struct item{<br>    char name[20];    //保存客户姓名<br>    char gender[20];  //保存客户性别<br>    int  age;         //保存客户年龄<br>    char tel[20];     //保存客户号码<br>} guest;<br></pre><br>结构体定义不要多说了哈，这里<code>typedef...guest</code>是给<strong>结构体item起别名</strong>的意思，也就是<br><code>struct item</code>在这个源文件里面等价于<code>guest</code>   </p><p><pre name="code" class="c++"><br>typedef struct node {<br>    guest data;         //数据域<br>    struct node <em> next; //指针域<br>}</em> link;<br></pre><br>这里是给<strong>指向结构体node的指针起别名</strong></p><p>###全局变量定义<br><code>link T;//头指针</code><br>这个头指针T是整个系统的索引，六个模块共有一个，虽然有尽量少定义全局变量的原则，但这里<br>的全局变量T可以避免各个函数间复杂的参数传递问题，牺牲了空间，换取了运行时间的减少；<br>同时要注意我在后面对T的初始化代码   </p><p><pre name="code" class="c++"><br>//初始化头指针<br>T=(link)malloc(sizeof(struct node));<br>T-&gt;next = NULL;<br></pre><br>这里并没有给T安排数据域，T不是第一个存储客户信息的节点指针，T-&gt;next才是，初始化头指针<br>时还没有存储客户信息的结点加入，所以<code>T-&gt;next=NULL;</code>,这是一个编程者应该养成的好习惯；为<br>什么不给T安排数据域呢，这里主要考虑到后面的删除模块的编写，我们知道，删除一个结点，要先<br>找到这个结点的前驱指针p和后驱指针q，然后<code>p-&gt;next = q-&gt;next；</code>,如果给T安排数据域的话，<br>T的前驱是什么呢？就算不用上面我说的那套删除逻辑，用<code>if...else...</code>语句和另外一套逻辑<br>完成对T的删除，代码明显复杂些。 </p><p>##项目核心代码   </p><p>###一、加载文件<br>代码如下   </p><p><pre name="code" class="c++"><br>void init() {<br>    link p,s;<br>    FILE *fp;<br>    int i  = 0;<br>    s = p=(link)malloc(sizeof(struct node));<br>    p-&gt;next = NULL;<br>    if((fp=fopen(“1.txt”,”r”))==NULL) {<br>        printf(“load error!”);<br>        exit(1);<br>    }<br>    while(!feof(fp)) {<br>        fscanf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,&amp;p-&gt;data.age,p-&gt;data.tel);<br>        i++;<br>        if(i!=1) {<br>            s-&gt;next = p;<br>            s=p;<br>        }<br>        else{<br>            T-&gt;next = p;<br>        }<br>        p=(link)malloc(sizeof(struct node));<br>        p-&gt;next = NULL;<br>    }<br>    printf(“总人数i=====%d\n”,i);<br>    if(fclose(fp)) {<br>        printf(“Can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>介绍下代码逻辑，新开辟内存空间，并使s、p指向它，打开文件，如果文件指针没有到文件尾，将<br>从文件读取到的一个客户信息赋给p的数据域，如果是读取第一个客户信息，将p指向的结点连在头<br>指针T后面，否则，将p连在s后面，因为这个时候s是p的前驱指针，连接成功后将p赋值给s，p又<br>指向一个新开辟的结点…<br>图示：<br><img src="https://i.imgur.com/hSpoXhg.png" alt="">     </p><p>###二、增加客户<br>代码如下：</p><p><pre name="code" class="c++"><br>//添加<br>void create() {<br>    link p,s;<br>    FILE *fp;<br>    int yn;<br>    s=T;<br>    while(s-&gt;next!=NULL) {<br>        s=s-&gt;next;<br>    }<br>    do {<br>        p=(link)malloc(sizeof(struct node));<br>        printf(“请输入客户姓名：\n”);<br>        scanf(“%s”,p-&gt;data.name);<br>        printf(“请输入客户性别：\n”);<br>        scanf(“%s”,p-&gt;data.gender);<br>        printf(“请输入客户年龄：\n”);<br>        scanf(“%d”,&amp;p-&gt;data.age);<br>        printf(“请输入客户联系方式：\n”);<br>        scanf(“%s”,p-&gt;data.tel);<br>        p-&gt;next=NULL;<br>        s-&gt;next=p;<br>        s=p;<br>        if((fp=fopen(“1.txt”,”at”))==NULL) {<br>            printf(“write error!\n”);<br>            exit(0);<br>        }<br>        printf(“写了一次\n”);<br>        fprintf(fp,”%s\t%s\t%d\t%s\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        if(fclose(fp)) {<br>            printf(“can’t close the file!\n”);<br>            exit(0);<br>        }<br>        printf(“添加成功!\n”);<br>        printf(“是否继续添加请输入0或1:”);<br>        scanf(“%d”,&amp;yn);<br>    } while(yn);<br>}<br></pre><br>代码逻辑很简单，新增结点，并连在尾节点后面，同时写入文件，如果前一片代码看懂了，这不是什么<br>大问题…     </p><p>###三、删除客户<br>代码如下</p><p><pre name="code" class="c++"><br>//删除<br>int del() {<br>    link p,q;<br>    FILE *fp;<br>    char mod[25];<br>    printf(“请输入需要删除的客户名称:\n”);<br>    scanf(“%s”,mod);<br>    p=T;<br>    while(p-&gt;next!=NULL&amp;&amp;strcmp(p-&gt;next-&gt;data.name,mod)!=0)<br>        p=p-&gt;next;<br>    if(p-&gt;next==NULL) {<br>        printf(“并无此人！\n”);<br>        return 0;<br>    }<br>    q = p;<br>    p = p-&gt;next;<br>    q-&gt;next = p-&gt;next;<br>    delete(p);<br>    printf(“删除成功！\n”);<br>    if((fp=fopen(“1.txt”,”wt”))==NULL) {<br>        printf(“error!\n”);<br>        exit(0);<br>    }<br>    p=T-&gt;next;<br>    while(p!=NULL) {<br>        printf(“%s”,p-&gt;data.name);<br>        fprintf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        p = p-&gt;next;<br>    }<br>    if(fclose(fp)) {<br>        printf(“can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>模块三、四、五、六道理类似，不再赘述<br>附上代码地址：<br><a href="https://github.com/ckxk/DataStructure/tree/master/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/day01%E5%8D%95%E9%93%BE%E8%A1%A8" target="_blank" rel="noopener">github</a> 欢迎star<br>如有疑问，欢迎进群讨论：<br><img src="https://shang.qq.com/wpa/qunwpaidkey=206e0bc6e1608678ffccd929ba75b1a459994d2b638d3253df444ffcfd4964d9" alt="加群链接"><br>如链接失效，扫二维码：<br><img src="https://i.imgur.com/fEXzOCG.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -61,21 +61,21 @@
     
     </summary>
     
-      <category term="数据结构" scheme="https://inspurer.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://ckxk.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="数据结构" scheme="https://inspurer.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+      <category term="数据结构" scheme="https://ckxk.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
   <entry>
     <title>前端入门第二天</title>
-    <link href="https://inspurer.github.io/2018/08/17/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
-    <id>https://inspurer.github.io/2018/08/17/前端入门第二天/</id>
+    <link href="https://ckxk.github.io/2018/08/17/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
+    <id>https://ckxk.github.io/2018/08/17/前端入门第二天/</id>
     <published>2018-08-17T11:43:04.000Z</published>
     <updated>2018-09-09T05:34:14.390Z</updated>
     
-    <content type="html"><![CDATA[<p>#前言<br>许久未更新了，今天七夕，为了逃避现实，重启博客。<br>本博客主要记录一些前端学习中的入门级问题。</p><hr><h2 id="Q1：HTML标签、元素、属性都是什么概念？"><a href="#Q1：HTML标签、元素、属性都是什么概念？" class="headerlink" title="Q1：HTML标签、元素、属性都是什么概念？ "></a>Q1：HTML标签、元素、属性都是什么概念？ </h2><p>A1:<br>HTML标签：HTML标签标记了HTML文档和HTML元素，HTML标签由开始标签和结束标签组成.<br>开始标签为尖括号包围的元素名,结束标签为尖括号包围的斜杠和元素名。<br>例如:<code>&lt;h2&gt; My First Heading&lt;/h2&gt;</code>  </p><p>HTML元素：HTML文档是由html元素定义的.<br>HTML的元素是指从开始标签到结束标签的所有代码..例如:<code>&lt;p&gt;我是一个段落&lt;/p&gt;</code>表示一个html元素.<br>可以看出,html元素主要包括html标签和纯文本.标签定义网页显示的格式,文本表示网页的内容.<br>故此,网页 =  html文档,而html文档则是由html元素定义的.   </p><p>HTML属性：<br>HTML属性为HTML元素提供附件信息,例如在超链接标签<code>&lt;a href = “https://inspurer.github.io&gt;月小水长的个人博客&lt;/a&gt;</code><br>使用了href属性来指定超链接的地址.<br>属性总是以名称/值的形式出现,例如:name = “value”<br>属性总是在开始标签中定义.</p><hr><h2 id="Q2：meta标签都用来做什么的？"><a href="#Q2：meta标签都用来做什么的？" class="headerlink" title="Q2：meta标签都用来做什么的？  "></a>Q2：meta标签都用来做什么的？  </h2><p>A2：<meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。   </p><p><meta> 标签位于文档的头部，不包含任何内容。<meta> 标签的属性定义了与文档相关联的名称/值对。</p><hr><h2 id="Q3：-Web语义化是什么，是为了解决什么问题？"><a href="#Q3：-Web语义化是什么，是为了解决什么问题？" class="headerlink" title="Q3： Web语义化是什么，是为了解决什么问题？"></a>Q3： Web语义化是什么，是为了解决什么问题？</h2><p>A3:<br>简言之，web语义化的目的是提高计算机和人对web代码的可读性。</p><p>网上的解释很多，个人总结分三个阶段比较容易理解。<br>1、原始的一些有实际含义的标签定义。浏览器和W3C组织推出的如h1~h6、thead、ul、ol<br>的HTML标签用于在Web页面中组织对应的内容，如网页标题、表头、无序、有序列表，<br>以达到更方便的协作及传播互联网内容的目的。搜索引擎很好的利用了这些语义化标签抓取<br>内容，又鉴于搜索引擎的巨大流量推荐，Web前端不得不考虑SEO，从而两者实现有益的<br>循环，共同推进着语义化标签的使用。</p><p>2、前端开发人员自定义的标签。但Web的发展超乎想象，起初定义的HTML语义化标签，<br>不足以实现对Web页面各个部分的功能或位置描述，所以Web前端人员利用HTML标签的<br>id和class属性，进一步对HTML标签进行描述，如对页脚HTML标签添加如id=”footer<br>“或者class=”footer”的属性（值），以“无声”的方式  在不同的前端程序员或者<br>前后端程序员间实现交流。</p><p>3、在第二步的推动下结合新技术出现的一些标签。W3C组织意识到了之前HTML版本的不足，<br>推出的HTML5进一步推进了Web语义化发展，采用了诸如footer、section等语义化标签，<br>弥补了采用id=”footer”或者class=”footer”形式的不足，以更好的推动Web的发展。<br>正所谓：世上本没有路，走的人多了，也便成了路。</p><hr><h2 id="Q4-表单标签都有哪些，对应着什么功能，都有哪些属性"><a href="#Q4-表单标签都有哪些，对应着什么功能，都有哪些属性" class="headerlink" title="Q4: 表单标签都有哪些，对应着什么功能，都有哪些属性?   "></a>Q4: 表单标签都有哪些，对应着什么功能，都有哪些属性?   </h2><p>A4: 还是W3School的这篇教程经典：<a href="http://www.w3school.com.cn/html/html_form_input_types.asp" target="_blank" rel="noopener">HTML表单标签之input</a></p><hr><h2 id="Q5-ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方-举个例子"><a href="#Q5-ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方-举个例子" class="headerlink" title="Q5: ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方?举个例子."></a>Q5: ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方?举个例子.</h2><p>A5: </p><p>1.无序列表</p><p>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。<br>无序列表始于 <code>&lt;ul&gt;</code>标签。每个列表项始于 <code>&lt;li&gt;</code>。<br><img src="https://i.imgur.com/b6R182y.jpg" alt="">   </p><p>2.有序列表    </p><p>同样，有序列表也是一列项目，列表项目使用数字进行标记。<br>有序列表始于 <code>&lt;ol&gt;</code>标签。每个列表项始于<code>&lt;li&gt;</code> 标签。   </p><p>`<ol>  </ol></p><p><li>Coffee</li>   </p><p><li>Milk</li>  </p><p><ol>`</ol></p><p>浏览器显示如下<br><img src="https://i.imgur.com/IW5e7G1.png" alt=""></p><p>3.定义列表</p><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。<br>自定义列表以 <code>&lt;dl&gt;</code>标签开始。每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。<br>每个自定义列表项的定义以<code>&lt;dd&gt;</code> 开始。<br><img src="https://i.imgur.com/DLDdGKN.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>#前言<br>许久未更新了，今天七夕，为了逃避现实，重启博客。<br>本博客主要记录一些前端学习中的入门级问题。</p><hr><h2 id="Q1：HTML标签、元素、属性都是什么概念？"><a href="#Q1：HTML标签、元素、属性都是什么概念？" class="headerlink" title="Q1：HTML标签、元素、属性都是什么概念？ "></a>Q1：HTML标签、元素、属性都是什么概念？ </h2><p>A1:<br>HTML标签：HTML标签标记了HTML文档和HTML元素，HTML标签由开始标签和结束标签组成.<br>开始标签为尖括号包围的元素名,结束标签为尖括号包围的斜杠和元素名。<br>例如:<code>&lt;h2&gt; My First Heading&lt;/h2&gt;</code>  </p><p>HTML元素：HTML文档是由html元素定义的.<br>HTML的元素是指从开始标签到结束标签的所有代码..例如:<code>&lt;p&gt;我是一个段落&lt;/p&gt;</code>表示一个html元素.<br>可以看出,html元素主要包括html标签和纯文本.标签定义网页显示的格式,文本表示网页的内容.<br>故此,网页 =  html文档,而html文档则是由html元素定义的.   </p><p>HTML属性：<br>HTML属性为HTML元素提供附件信息,例如在超链接标签<code>&lt;a href = “https://ckxk.github.io&gt;刺客小柯的个人博客&lt;/a&gt;</code><br>使用了href属性来指定超链接的地址.<br>属性总是以名称/值的形式出现,例如:name = “value”<br>属性总是在开始标签中定义.</p><hr><h2 id="Q2：meta标签都用来做什么的？"><a href="#Q2：meta标签都用来做什么的？" class="headerlink" title="Q2：meta标签都用来做什么的？  "></a>Q2：meta标签都用来做什么的？  </h2><p>A2：<meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。   </p><p><meta> 标签位于文档的头部，不包含任何内容。<meta> 标签的属性定义了与文档相关联的名称/值对。</p><hr><h2 id="Q3：-Web语义化是什么，是为了解决什么问题？"><a href="#Q3：-Web语义化是什么，是为了解决什么问题？" class="headerlink" title="Q3： Web语义化是什么，是为了解决什么问题？"></a>Q3： Web语义化是什么，是为了解决什么问题？</h2><p>A3:<br>简言之，web语义化的目的是提高计算机和人对web代码的可读性。</p><p>网上的解释很多，个人总结分三个阶段比较容易理解。<br>1、原始的一些有实际含义的标签定义。浏览器和W3C组织推出的如h1~h6、thead、ul、ol<br>的HTML标签用于在Web页面中组织对应的内容，如网页标题、表头、无序、有序列表，<br>以达到更方便的协作及传播互联网内容的目的。搜索引擎很好的利用了这些语义化标签抓取<br>内容，又鉴于搜索引擎的巨大流量推荐，Web前端不得不考虑SEO，从而两者实现有益的<br>循环，共同推进着语义化标签的使用。</p><p>2、前端开发人员自定义的标签。但Web的发展超乎想象，起初定义的HTML语义化标签，<br>不足以实现对Web页面各个部分的功能或位置描述，所以Web前端人员利用HTML标签的<br>id和class属性，进一步对HTML标签进行描述，如对页脚HTML标签添加如id=”footer<br>“或者class=”footer”的属性（值），以“无声”的方式  在不同的前端程序员或者<br>前后端程序员间实现交流。</p><p>3、在第二步的推动下结合新技术出现的一些标签。W3C组织意识到了之前HTML版本的不足，<br>推出的HTML5进一步推进了Web语义化发展，采用了诸如footer、section等语义化标签，<br>弥补了采用id=”footer”或者class=”footer”形式的不足，以更好的推动Web的发展。<br>正所谓：世上本没有路，走的人多了，也便成了路。</p><hr><h2 id="Q4-表单标签都有哪些，对应着什么功能，都有哪些属性"><a href="#Q4-表单标签都有哪些，对应着什么功能，都有哪些属性" class="headerlink" title="Q4: 表单标签都有哪些，对应着什么功能，都有哪些属性?   "></a>Q4: 表单标签都有哪些，对应着什么功能，都有哪些属性?   </h2><p>A4: 还是W3School的这篇教程经典：<a href="http://www.w3school.com.cn/html/html_form_input_types.asp" target="_blank" rel="noopener">HTML表单标签之input</a></p><hr><h2 id="Q5-ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方-举个例子"><a href="#Q5-ol-ul-li-dl-dd-dt等这些标签都适合用在什么地方-举个例子" class="headerlink" title="Q5: ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方?举个例子."></a>Q5: ol, ul, li, dl, dd, dt等这些标签都适合用在什么地方?举个例子.</h2><p>A5: </p><p>1.无序列表</p><p>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。<br>无序列表始于 <code>&lt;ul&gt;</code>标签。每个列表项始于 <code>&lt;li&gt;</code>。<br><img src="https://i.imgur.com/b6R182y.jpg" alt="">   </p><p>2.有序列表    </p><p>同样，有序列表也是一列项目，列表项目使用数字进行标记。<br>有序列表始于 <code>&lt;ol&gt;</code>标签。每个列表项始于<code>&lt;li&gt;</code> 标签。   </p><p>`<ol>  </ol></p><p><li>Coffee</li>   </p><p><li>Milk</li>  </p><p><ol>`</ol></p><p>浏览器显示如下<br><img src="https://i.imgur.com/IW5e7G1.png" alt=""></p><p>3.定义列表</p><p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。<br>自定义列表以 <code>&lt;dl&gt;</code>标签开始。每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。<br>每个自定义列表项的定义以<code>&lt;dd&gt;</code> 开始。<br><img src="https://i.imgur.com/DLDdGKN.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
@@ -88,17 +88,17 @@
     
     </summary>
     
-      <category term="前端学习" scheme="https://inspurer.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+      <category term="前端学习" scheme="https://ckxk.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="前端" scheme="https://inspurer.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://ckxk.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>前端入门杂记</title>
-    <link href="https://inspurer.github.io/2018/06/12/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E6%9D%82%E8%AE%B0/"/>
-    <id>https://inspurer.github.io/2018/06/12/前端入门杂记/</id>
+    <link href="https://ckxk.github.io/2018/06/12/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E6%9D%82%E8%AE%B0/"/>
+    <id>https://ckxk.github.io/2018/06/12/前端入门杂记/</id>
     <published>2018-06-12T15:58:24.000Z</published>
     <updated>2018-08-17T13:07:35.698Z</updated>
     
@@ -110,43 +110,43 @@
     
     </summary>
     
-      <category term="前端学习" scheme="https://inspurer.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+      <category term="前端学习" scheme="https://ckxk.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="前端" scheme="https://inspurer.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://ckxk.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>前端入门第一天</title>
-    <link href="https://inspurer.github.io/2018/06/11/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
-    <id>https://inspurer.github.io/2018/06/11/前端入门第一天/</id>
+    <link href="https://ckxk.github.io/2018/06/11/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
+    <id>https://ckxk.github.io/2018/06/11/前端入门第一天/</id>
     <published>2018-06-11T15:40:05.000Z</published>
     <updated>2018-06-12T04:58:52.832Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前不久在网上看到一篇Hexo建站的教程，顺手给自己建了个<a href="https://inspurer.github.io/">个人博客</a>  <a id="more"></a><br>有还算扎实的c++/java/python/andorid基础，整个建站过程还算顺利<br>从此沉迷web编程,但是我感觉用现成的框架,总有点那啥受制于人的感觉<br>打算好好学一下前端，由于在实验室跟着老师做项目一直没有时间<br>但是万万没想到，心心念念的前端，开始正式开始系统学习居然是在忙到炸的期末考试周<br>在此要先pick一下<a href="http://ife.baidu.com/college/detail/id/5" target="_blank" rel="noopener">百度前端技术学院</a>,可以说是我的前端入门导师了哈哈哈，不bb了，<br>正式开始。  </p><hr><h2 id="首先我们要知道访问网站的具体过程"><a href="#首先我们要知道访问网站的具体过程" class="headerlink" title="首先我们要知道访问网站的具体过程  "></a>首先我们要知道访问网站的具体过程  </h2><p>比如，输入<code>http://www.zhihu.com/question/22689579</code><br>访问过程如下图所示<br><img src="/images/20180612/1.jpg" alt=""><br>浏览器和服务器交流，服务器和数据库交流（有时候数据库就在服务器那台机子上）<br>浏览器给服务器发一个请求，服务器不是一看就知道怎么响应的。<br>首先这些请求和响应要有一个通用的写法，也就是要有一个协议，常用的是<code>HTTP</code>协议。<br>像最前面的图，服务器的响应写了一个状态码<code>200 OK</code>,是<code>HTTP</code>协议里约定俗成的一个东西，<br>服务器写<code>200 OK</code>在响应里，表示“你请求的这个东西我有”，<br>如果是<code>404 Not Found</code>，就是“你请求的这个东西我这里没有”。<br><code>HTTP</code>响应里还包括很多东西，比如<code>Content-type</code>表示服务器发过来的文件类型是什么（文本？动画？图片？音频？）<br>形象化<code>Http</code>响应，大概这样：<br><img src="/images/20180612/2.jpg" alt="">  </p><hr><h2 id="然后我们来了解前端三剑客"><a href="#然后我们来了解前端三剑客" class="headerlink" title="然后我们来了解前端三剑客"></a>然后我们来了解前端三剑客</h2><ol><li><strong>html</strong> 接上图，服务器返回html（就是上图HTTP响应的body里的内容)文件  后,电脑拿到<code>html</code>后，浏览器就会对它进行解析渲染，html是一种文本标记语言，举个栗子：<br><img src="/images/20180612/3.jpg" alt="">  </li><li><strong>css</strong> 浏览器拿到这些代码之后，分析一下给你渲染好页面显示出来，<br>但是如果没有用css，效果是这样的，按照浏览器默认的样式显示<br>出列表、图片、超链接、输入框、按钮等等：<br><img src="/images/20180612/4.jpg" alt=""><br>是不是觉得默认样式有点看瞎狗眼呢……所以很多时候我们需要自定义样式，<br>现行通用的规定样式的语言是CSS，我们可以用它写一些定义样式的代码，<br>在 html 文件里用一个<link>标签把这些规定样式的CSS代码与表达内容语义的HTML代码关联起来，<br>然后你就能看到一个符合人类正常审美的页面了:<br><img src="/images/20180612/5.jpg" alt=""><br>插一句：CSS 代码的格式基本是<br><code>属性 : 值</code></li><li><strong>javascipt(js)</strong>有了表示内容和语义的 HTML，规定样式的 CSS，<br>得到的是一个静态的页面，没什么动画（其实用 CSS 还是可以有一些动画的,不过这个跑题了),<br>按 F5 才会刷新数据，于是我们有了 Javascript(js)来给页面添加一些动态的效果<br>浏览器都会帮你实现一些 JS 可以用的工具（函数，对象什么的），<br>你只要写一些js的代码，保存在xxx.js 里，在html文件中用 <code>&lt;script&gt;</code>关联进来就可以用了</li><li>在前端三剑客bb了怎么多，可以用一句很形象的话来归纳之：<br><code>前台三剑客，html是名词，css是形容词，javascript是动词。三个互相配合才是一句子</code><br>就问形不形象</li></ol><hr><h2 id="立个Flag"><a href="#立个Flag" class="headerlink" title="立个Flag"></a>立个Flag</h2><p>  考虑到三周的期末周，就立一个这样的flag吧：<br>暑假每天至少学习前端两个小时，争取下学期开始学完！  </p><hr><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>最后实名pick一下小姐姐<a href="https://www.zhihu.com/question/22689579/answer/22318058" target="_blank" rel="noopener">张秋怡</a>,<br>感谢她的精彩回答<br>我只是个搬运工<br>只不过经过自己的理解稍作了修改<br>2018/6/12 00:31初稿<br>欢迎评论啊  </p><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前不久在网上看到一篇Hexo建站的教程，顺手给自己建了个<a href="https://ckxk.github.io/">个人博客</a>  <a id="more"></a><br>有还算扎实的c++/java/python/andorid基础，整个建站过程还算顺利<br>从此沉迷web编程,但是我感觉用现成的框架,总有点那啥受制于人的感觉<br>打算好好学一下前端，由于在实验室跟着老师做项目一直没有时间<br>但是万万没想到，心心念念的前端，开始正式开始系统学习居然是在忙到炸的期末考试周<br>在此要先pick一下<a href="http://ife.baidu.com/college/detail/id/5" target="_blank" rel="noopener">百度前端技术学院</a>,可以说是我的前端入门导师了哈哈哈，不bb了，<br>正式开始。  </p><hr><h2 id="首先我们要知道访问网站的具体过程"><a href="#首先我们要知道访问网站的具体过程" class="headerlink" title="首先我们要知道访问网站的具体过程  "></a>首先我们要知道访问网站的具体过程  </h2><p>比如，输入<code>http://www.zhihu.com/question/22689579</code><br>访问过程如下图所示<br><img src="/images/20180612/1.jpg" alt=""><br>浏览器和服务器交流，服务器和数据库交流（有时候数据库就在服务器那台机子上）<br>浏览器给服务器发一个请求，服务器不是一看就知道怎么响应的。<br>首先这些请求和响应要有一个通用的写法，也就是要有一个协议，常用的是<code>HTTP</code>协议。<br>像最前面的图，服务器的响应写了一个状态码<code>200 OK</code>,是<code>HTTP</code>协议里约定俗成的一个东西，<br>服务器写<code>200 OK</code>在响应里，表示“你请求的这个东西我有”，<br>如果是<code>404 Not Found</code>，就是“你请求的这个东西我这里没有”。<br><code>HTTP</code>响应里还包括很多东西，比如<code>Content-type</code>表示服务器发过来的文件类型是什么（文本？动画？图片？音频？）<br>形象化<code>Http</code>响应，大概这样：<br><img src="/images/20180612/2.jpg" alt="">  </p><hr><h2 id="然后我们来了解前端三剑客"><a href="#然后我们来了解前端三剑客" class="headerlink" title="然后我们来了解前端三剑客"></a>然后我们来了解前端三剑客</h2><ol><li><strong>html</strong> 接上图，服务器返回html（就是上图HTTP响应的body里的内容)文件  后,电脑拿到<code>html</code>后，浏览器就会对它进行解析渲染，html是一种文本标记语言，举个栗子：<br><img src="/images/20180612/3.jpg" alt="">  </li><li><strong>css</strong> 浏览器拿到这些代码之后，分析一下给你渲染好页面显示出来，<br>但是如果没有用css，效果是这样的，按照浏览器默认的样式显示<br>出列表、图片、超链接、输入框、按钮等等：<br><img src="/images/20180612/4.jpg" alt=""><br>是不是觉得默认样式有点看瞎狗眼呢……所以很多时候我们需要自定义样式，<br>现行通用的规定样式的语言是CSS，我们可以用它写一些定义样式的代码，<br>在 html 文件里用一个<link>标签把这些规定样式的CSS代码与表达内容语义的HTML代码关联起来，<br>然后你就能看到一个符合人类正常审美的页面了:<br><img src="/images/20180612/5.jpg" alt=""><br>插一句：CSS 代码的格式基本是<br><code>属性 : 值</code></li><li><strong>javascipt(js)</strong>有了表示内容和语义的 HTML，规定样式的 CSS，<br>得到的是一个静态的页面，没什么动画（其实用 CSS 还是可以有一些动画的,不过这个跑题了),<br>按 F5 才会刷新数据，于是我们有了 Javascript(js)来给页面添加一些动态的效果<br>浏览器都会帮你实现一些 JS 可以用的工具（函数，对象什么的），<br>你只要写一些js的代码，保存在xxx.js 里，在html文件中用 <code>&lt;script&gt;</code>关联进来就可以用了</li><li>在前端三剑客bb了怎么多，可以用一句很形象的话来归纳之：<br><code>前台三剑客，html是名词，css是形容词，javascript是动词。三个互相配合才是一句子</code><br>就问形不形象</li></ol><hr><h2 id="立个Flag"><a href="#立个Flag" class="headerlink" title="立个Flag"></a>立个Flag</h2><p>  考虑到三周的期末周，就立一个这样的flag吧：<br>暑假每天至少学习前端两个小时，争取下学期开始学完！  </p><hr><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>最后实名pick一下小姐姐<a href="https://www.zhihu.com/question/22689579/answer/22318058" target="_blank" rel="noopener">张秋怡</a>,<br>感谢她的精彩回答<br>我只是个搬运工<br>只不过经过自己的理解稍作了修改<br>2018/6/12 00:31初稿<br>欢迎评论啊  </p><hr>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前不久在网上看到一篇Hexo建站的教程，顺手给自己建了个&lt;a href=&quot;https://inspurer.github.io/&quot;&gt;个人博客&lt;/a&gt;
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;前不久在网上看到一篇Hexo建站的教程，顺手给自己建了个&lt;a href=&quot;https://ckxk.github.io/&quot;&gt;个人博客&lt;/a&gt;
     
     </summary>
     
-      <category term="前端学习" scheme="https://inspurer.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
+      <category term="前端学习" scheme="https://ckxk.github.io/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="前端" scheme="https://inspurer.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="https://ckxk.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>免费快速设置QQZone背景音乐</title>
-    <link href="https://inspurer.github.io/2018/06/10/%E5%85%8D%E8%B4%B9%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEQQZone%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/"/>
-    <id>https://inspurer.github.io/2018/06/10/免费快速设置QQZone背景音乐/</id>
+    <link href="https://ckxk.github.io/2018/06/10/%E5%85%8D%E8%B4%B9%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEQQZone%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90/"/>
+    <id>https://ckxk.github.io/2018/06/10/免费快速设置QQZone背景音乐/</id>
     <published>2018-06-10T05:39:56.000Z</published>
     <updated>2018-06-10T10:27:40.851Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="教程如下"><a href="#教程如下" class="headerlink" title="教程如下:  "></a>教程如下:  </h2><ol><li><p>右键复制文末的音乐链接，注意把复制后的链接中的<code>https</code>改成<code>http</code><a id="more"></a>,QQZone不支持<code>https</code>。  </p></li><li><p>进入你的QQ空间,找到网页播放器,点击它。</p></li><li><p>然后点击添加网络背景音乐。<br><img src="/images/20180610/捕获2.png" alt="">  </p></li><li>把链接复制进去,然后再配置一下歌曲名和歌手名就Ok了<br><img src="/images/20180610/捕获3.png" alt=""></li><li>效果图<br><img src="https://inspurer.github.io/images/20180610/result.png" alt=""></li></ol><hr><h2 id="最后附上现有链接，需要哪些音乐请评论。"><a href="#最后附上现有链接，需要哪些音乐请评论。" class="headerlink" title="最后附上现有链接，需要哪些音乐请评论。 "></a>最后附上现有链接，需要哪些音乐请评论。 </h2><ul><li><a href="https://inspurer.github.io/music/ALWAYS.mp3">Always-尹美莱.mp3</a></li><li><a href="https://inspurer.github.io/music/(每天和你).mp3">매일 그대와 (每天和你).mp3</a></li></ul><hr>]]></content>
+    <content type="html"><![CDATA[<h2 id="教程如下"><a href="#教程如下" class="headerlink" title="教程如下:  "></a>教程如下:  </h2><ol><li><p>右键复制文末的音乐链接，注意把复制后的链接中的<code>https</code>改成<code>http</code><a id="more"></a>,QQZone不支持<code>https</code>。  </p></li><li><p>进入你的QQ空间,找到网页播放器,点击它。</p></li><li><p>然后点击添加网络背景音乐。<br><img src="/images/20180610/捕获2.png" alt="">  </p></li><li>把链接复制进去,然后再配置一下歌曲名和歌手名就Ok了<br><img src="/images/20180610/捕获3.png" alt=""></li><li>效果图<br><img src="https://ckxk.github.io/images/20180610/result.png" alt=""></li></ol><hr><h2 id="最后附上现有链接，需要哪些音乐请评论。"><a href="#最后附上现有链接，需要哪些音乐请评论。" class="headerlink" title="最后附上现有链接，需要哪些音乐请评论。 "></a>最后附上现有链接，需要哪些音乐请评论。 </h2><ul><li><a href="https://ckxk.github.io/music/ALWAYS.mp3">Always-尹美莱.mp3</a></li><li><a href="https://ckxk.github.io/music/(每天和你).mp3">매일 그대와 (每天和你).mp3</a></li></ul><hr>]]></content>
     
     <summary type="html">
     
@@ -155,15 +155,15 @@
     
     </summary>
     
-      <category term="实用教程" scheme="https://inspurer.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+      <category term="实用教程" scheme="https://ckxk.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
   </entry>
   
   <entry>
     <title>2018/06/08生活志</title>
-    <link href="https://inspurer.github.io/2018/06/08/%E7%94%9F%E6%B4%BB%E5%BF%97180608/"/>
-    <id>https://inspurer.github.io/2018/06/08/生活志180608/</id>
+    <link href="https://ckxk.github.io/2018/06/08/%E7%94%9F%E6%B4%BB%E5%BF%97180608/"/>
+    <id>https://ckxk.github.io/2018/06/08/生活志180608/</id>
     <published>2018-06-08T13:19:52.776Z</published>
     <updated>2018-06-10T10:42:38.128Z</updated>
     
@@ -175,19 +175,19 @@
     
     </summary>
     
-      <category term="生活志" scheme="https://inspurer.github.io/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
+      <category term="生活志" scheme="https://ckxk.github.io/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>”月小水长“和“inspurer”的由来</title>
-    <link href="https://inspurer.github.io/2018/06/07/%E6%9C%88%E5%B0%8F%E6%B0%B4%E9%95%BF%E7%9A%84%E7%94%B1%E6%9D%A5/"/>
-    <id>https://inspurer.github.io/2018/06/07/月小水长的由来/</id>
+    <title>”刺客小柯“和“ckxk”的由来</title>
+    <link href="https://ckxk.github.io/2018/06/07/%E6%9C%88%E5%B0%8F%E6%B0%B4%E9%95%BF%E7%9A%84%E7%94%B1%E6%9D%A5/"/>
+    <id>https://ckxk.github.io/2018/06/07/刺客小柯的由来/</id>
     <published>2018-06-07T08:24:34.000Z</published>
     <updated>2018-06-11T16:42:43.760Z</updated>
     
-    <content type="html"><![CDATA[<p> 非凭空臆想,其有典故；宋苏轼在后赤壁赋有云：<code>山高月小，水落石出曾日月之几何，而江山不可复识矣</code><a id="more"></a><br>在此我引申出<code>月小水长</code>句，一为不怕贻笑大方而附庸风雅，二为吾全名<code>肖涛</code>之字析，<code>月小</code>为<code>肖</code>，<code>水</code>即三点水，<code>长寿</code>为<code>涛</code>，还算是能够自圆其说。<br>至于<code>inspurer</code>,大一的时候了解到一家很厉害的中国企业<code>inspur浪潮</code><br>想不到中国除了<code>华为</code>还有在高新技术领域耕耘了这么深的企业，遂起名<br><code>inspurer</code>，寓意<code>弄潮儿</code>，想成为那种站在技术潮头的人儿呐~</p><hr>]]></content>
+    <content type="html"><![CDATA[<p> 非凭空臆想,其有典故；宋苏轼在后赤壁赋有云：<code>山高月小，水落石出曾日月之几何，而江山不可复识矣</code><a id="more"></a><br>在此我引申出<code>刺客小柯</code>句，一为不怕贻笑大方而附庸风雅，二为吾全名<code>肖涛</code>之字析，<code>月小</code>为<code>肖</code>，<code>水</code>即三点水，<code>长寿</code>为<code>涛</code>，还算是能够自圆其说。<br>至于<code>ckxk</code>,大一的时候了解到一家很厉害的中国企业<code>inspur浪潮</code><br>想不到中国除了<code>华为</code>还有在高新技术领域耕耘了这么深的企业，遂起名<br><code>ckxk</code>，寓意<code>弄潮儿</code>，想成为那种站在技术潮头的人儿呐~</p><hr>]]></content>
     
     <summary type="html">
     
@@ -195,7 +195,7 @@
     
     </summary>
     
-      <category term="生活志" scheme="https://inspurer.github.io/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
+      <category term="生活志" scheme="https://ckxk.github.io/categories/%E7%94%9F%E6%B4%BB%E5%BF%97/"/>
     
     
   </entry>
