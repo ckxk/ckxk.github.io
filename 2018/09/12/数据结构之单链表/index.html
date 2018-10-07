@@ -84,7 +84,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="月小水长的个人博客" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="刺客小柯的个人博客" type="application/atom+xml" />
 
 
 
@@ -95,8 +95,8 @@
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构之单链表">
-<meta property="og:url" content="https://inspurer.github.io/2018/09/12/数据结构之单链表/index.html">
-<meta property="og:site_name" content="月小水长的个人博客">
+<meta property="og:url" content="https://ckxk.github.io/2018/09/12/数据结构之单链表/index.html">
+<meta property="og:site_name" content="刺客小柯的个人博客">
 <meta property="og:description" content="从今天起开始数据结构系列的分享，今天分享的是单链表。单链表大概是大概是每个数据结构初学者的必经之路，下面结合一个小小的工程深入学习单链表的使用–简易客户管理系统。ps：如果还不清楚单链表是什么的小伙伴自行百度，在此不在赘述     #项目结构如图所示大致了解了项目架构后，下面开始从零编写代码注：增、删、改这三个部分同时包含了将变动后的信息写入到文件中的操作      #代码编写 ##项目基础代码俗">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/ndpa8Mo.png">
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="https://inspurer.github.io/2018/09/12/数据结构之单链表/"/>
+  <link rel="canonical" href="https://ckxk.github.io/2018/09/12/数据结构之单链表/"/>
 
 
 
 
 
-  <title>数据结构之单链表 | 月小水长的个人博客</title>
+  <title>数据结构之单链表 | 刺客小柯的个人博客</title>
   
 
 
@@ -180,7 +180,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">月小水长的个人博客</span>
+        <span class="site-title">刺客小柯的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -321,16 +321,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://inspurer.github.io/2018/09/12/数据结构之单链表/">
+    <link itemprop="mainEntityOfPage" href="https://ckxk.github.io/2018/09/12/数据结构之单链表/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="月小水长">
+      <meta itemprop="name" content="刺客小柯">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/touxiang.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="月小水长的个人博客">
+      <meta itemprop="name" content="刺客小柯的个人博客">
     </span>
 
     
@@ -480,7 +480,7 @@
 <p>###二、增加客户<br>代码如下：</p>
 <p><pre name="code" class="c++"><br>//添加<br>void create() {<br>    link p,s;<br>    FILE *fp;<br>    int yn;<br>    s=T;<br>    while(s-&gt;next!=NULL) {<br>        s=s-&gt;next;<br>    }<br>    do {<br>        p=(link)malloc(sizeof(struct node));<br>        printf(“请输入客户姓名：\n”);<br>        scanf(“%s”,p-&gt;data.name);<br>        printf(“请输入客户性别：\n”);<br>        scanf(“%s”,p-&gt;data.gender);<br>        printf(“请输入客户年龄：\n”);<br>        scanf(“%d”,&amp;p-&gt;data.age);<br>        printf(“请输入客户联系方式：\n”);<br>        scanf(“%s”,p-&gt;data.tel);<br>        p-&gt;next=NULL;<br>        s-&gt;next=p;<br>        s=p;<br>        if((fp=fopen(“1.txt”,”at”))==NULL) {<br>            printf(“write error!\n”);<br>            exit(0);<br>        }<br>        printf(“写了一次\n”);<br>        fprintf(fp,”%s\t%s\t%d\t%s\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        if(fclose(fp)) {<br>            printf(“can’t close the file!\n”);<br>            exit(0);<br>        }<br>        printf(“添加成功!\n”);<br>        printf(“是否继续添加请输入0或1:”);<br>        scanf(“%d”,&amp;yn);<br>    } while(yn);<br>}<br></pre><br>代码逻辑很简单，新增结点，并连在尾节点后面，同时写入文件，如果前一片代码看懂了，这不是什么<br>大问题…     </p>
 <p>###三、删除客户<br>代码如下</p>
-<p><pre name="code" class="c++"><br>//删除<br>int del() {<br>    link p,q;<br>    FILE *fp;<br>    char mod[25];<br>    printf(“请输入需要删除的客户名称:\n”);<br>    scanf(“%s”,mod);<br>    p=T;<br>    while(p-&gt;next!=NULL&amp;&amp;strcmp(p-&gt;next-&gt;data.name,mod)!=0)<br>        p=p-&gt;next;<br>    if(p-&gt;next==NULL) {<br>        printf(“并无此人！\n”);<br>        return 0;<br>    }<br>    q = p;<br>    p = p-&gt;next;<br>    q-&gt;next = p-&gt;next;<br>    delete(p);<br>    printf(“删除成功！\n”);<br>    if((fp=fopen(“1.txt”,”wt”))==NULL) {<br>        printf(“error!\n”);<br>        exit(0);<br>    }<br>    p=T-&gt;next;<br>    while(p!=NULL) {<br>        printf(“%s”,p-&gt;data.name);<br>        fprintf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        p = p-&gt;next;<br>    }<br>    if(fclose(fp)) {<br>        printf(“can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>模块三、四、五、六道理类似，不再赘述<br>附上代码地址：<br><a href="https://github.com/inspurer/DataStructure/tree/master/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/day01%E5%8D%95%E9%93%BE%E8%A1%A8" target="_blank" rel="noopener">github</a> 欢迎star<br>如有疑问，欢迎进群讨论：<br><img src="https://shang.qq.com/wpa/qunwpaidkey=206e0bc6e1608678ffccd929ba75b1a459994d2b638d3253df444ffcfd4964d9" alt="加群链接"><br>如链接失效，扫二维码：<br><img src="https://i.imgur.com/fEXzOCG.jpg" alt=""></p>
+<p><pre name="code" class="c++"><br>//删除<br>int del() {<br>    link p,q;<br>    FILE *fp;<br>    char mod[25];<br>    printf(“请输入需要删除的客户名称:\n”);<br>    scanf(“%s”,mod);<br>    p=T;<br>    while(p-&gt;next!=NULL&amp;&amp;strcmp(p-&gt;next-&gt;data.name,mod)!=0)<br>        p=p-&gt;next;<br>    if(p-&gt;next==NULL) {<br>        printf(“并无此人！\n”);<br>        return 0;<br>    }<br>    q = p;<br>    p = p-&gt;next;<br>    q-&gt;next = p-&gt;next;<br>    delete(p);<br>    printf(“删除成功！\n”);<br>    if((fp=fopen(“1.txt”,”wt”))==NULL) {<br>        printf(“error!\n”);<br>        exit(0);<br>    }<br>    p=T-&gt;next;<br>    while(p!=NULL) {<br>        printf(“%s”,p-&gt;data.name);<br>        fprintf(fp,”%s\t%s\t%d\t%s\t\n”,p-&gt;data.name,p-&gt;data.gender,p-&gt;data.age,p-&gt;data.tel);<br>        p = p-&gt;next;<br>    }<br>    if(fclose(fp)) {<br>        printf(“can’t close the file!\n”);<br>        exit(1);<br>    }<br>}<br></pre><br>模块三、四、五、六道理类似，不再赘述<br>附上代码地址：<br><a href="https://github.com/ckxk/DataStructure/tree/master/%E5%A4%A7%E8%AF%9D%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/day01%E5%8D%95%E9%93%BE%E8%A1%A8" target="_blank" rel="noopener">github</a> 欢迎star<br>如有疑问，欢迎进群讨论：<br><img src="https://shang.qq.com/wpa/qunwpaidkey=206e0bc6e1608678ffccd929ba75b1a459994d2b638d3253df444ffcfd4964d9" alt="加群链接"><br>如链接失效，扫二维码：<br><img src="https://i.imgur.com/fEXzOCG.jpg" alt=""></p>
 
       
     </div>
@@ -498,11 +498,11 @@
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <p><span>本文标题:</span><a href="/2018/09/12/数据结构之单链表/">数据结构之单链表</a></p>
-  <p><span>文章作者:</span><a href="/" title="访问 月小水长 的个人博客">月小水长</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 刺客小柯 的个人博客">刺客小柯</a></p>
   <p><span>发布时间:</span>2018年09月12日 - 14:09</p>
   <p><span>最后更新:</span>2018年09月12日 - 16:09</p>
-  <p><span>原始链接:</span><a href="https://inspurer.github.io" title="1536734058000数据结构之单链表">https://inspurer.github.io/2018/09/12/数据结构之单链表/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://inspurer.github.io/2018/09/12/数据结构之单链表/"  aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="https://ckxk.github.io" title="1536734058000数据结构之单链表">https://ckxk.github.io/2018/09/12/数据结构之单链表/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://ckxk.github.io/2018/09/12/数据结构之单链表/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -537,14 +537,14 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/wechat.png" alt="月小水长 微信支付"/>
+        <img id="wechat_qr" src="/images/wechat.png" alt="刺客小柯 微信支付"/>
         <p>微信支付</p>
       </div>
     
 
     
       <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="/images/alipay.jpg" alt="月小水长 支付宝"/>
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="刺客小柯 支付宝"/>
         <p>支付宝</p>
       </div>
     
@@ -691,9 +691,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/images/touxiang.jpg"
-                alt="月小水长" />
+                alt="刺客小柯" />
             
-              <p class="site-author-name" itemprop="name">月小水长</p>
+              <p class="site-author-name" itemprop="name">刺客小柯</p>
               <p class="site-description motion-element" itemprop="description">一个不那么庸俗的人</p>
           </div>
 
@@ -747,7 +747,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/inspurer" target="_blank" title="GitHub">
+                    <a href="https://github.com/ckxk" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
@@ -820,13 +820,13 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">月小水长</span>
+  <span class="author" itemprop="copyrightHolder">刺客小柯</span>
 
   
 </div>
 
 
-  <div class="powerd by">由 <a class="theme-link" target="_blank" href="https://github.com/inspurer/inspurer.github.io">月小水长</a> 强力驱动</div>
+  <div class="powerd by">由 <a class="theme-link" target="_blank" href="https://github.com/ckxk/ckxk.github.io">刺客小柯</a> 强力驱动</div>
 
 
 
